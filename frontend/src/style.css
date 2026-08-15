@@ -10,25 +10,30 @@
   color:#222;
   }
 
-  .navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px;
-  background:black;
+  nav {
+      display: flex;
+        justify-content: space-between;
+          align-items: center;
+            background: #111;
+              color: white;
+                padding: 15px 30px;
+                  position: sticky;
+                    top: 0;
+                      z-index: 1000;
+                      }
   }
 
   .logo{
   width:80px;
   border-radius:50%;
   }
-
-  nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:20px;
-  font-weight:bold;
-  }
+  nav a {
+    color: gold;
+      text-decoration: none;
+        font-weight: bold;
+          margin-left: 20px;
+            transition: color 0.3s ease;
+            }
 
   .hero{
   text-align:center;
@@ -63,10 +68,12 @@
   margin-bottom:30px;
   }
 
-  .product-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
+  .product-grid {
+        display: grid;
+            grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                    padding: 40px 20px;
+                    }
   }
 
   .card{
@@ -77,3 +84,166 @@
   text-align:center;
   }
 }
+.card {
+    background: white;
+      border-radius: 15px;
+        padding: 15px;
+          text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+              transition: transform 0.3s ease;
+              }
+
+              .card:hover {
+                transform: translateY(-5px);
+                }
+
+                .card img {
+                  width: 100%;
+                    height: 220px;
+                      object-fit: cover;
+                        border-radius: 10px;
+                        }
+
+                        .card h3 {
+                          margin: 12px 0 8px;
+                            font-size: 18px;
+                            }
+
+                            .card p {
+                              color: #b8860b;
+                                font-weight: bold;
+                                  font-size: 18px;
+                                  }
+
+                                  .card button {
+                                    background: #b8860b;
+                                      color: white;
+                                        border: none;
+                                          padding: 10px 18px;
+                                            border-radius: 8px;
+                                              cursor: pointer;
+                                                margin-top: 10px;
+                                                }
+
+                                                .card button:hover {
+                                                  background: #8b6508;
+                                                  }
+}
+nav a:hover {
+    color: white;
+    }
+    .cart-panel {
+        display: none;
+          position: fixed;
+          top: 200px;
+          right: 20px;
+                width: 320px
+                  background: white;
+                    border: 2px solid gold;
+                      border-radius: 10px;
+                        padding: 20px;
+                          box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+                            z-index: 1000;
+                            }
+    }
+
+                      .cart-panel h2 {
+                        margin-top: 0;
+                        }
+
+                        .cart-panel button {
+                          width: 100%;
+                            margin-top: 15px;
+                              padding: 10px;
+                                background: #111;
+                                  color: white;
+                                    border: none;
+                                      border-radius: 8px;
+                                        cursor: pointer;
+                                        }
+}
+
+.card:hover {
+      transform: translateY(-5px);
+      }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .products {
+            grid-template-columns: repeat(2, 1fr);
+                    gap: 12px;
+                            padding: 20px 12px;
+                                }
+
+                                    .card {
+                                            padding: 10px;
+                                                }
+
+                                                    .card img {
+                                                            width: 100%;
+                                                                    height: auto;
+                                                                        }
+
+                                                                            .card h3 {
+                                                                                    font-size: 14px;
+                                                                                        }
+
+                                                                                            .card p {
+                                                                                                    font-size: 13px;
+                                                                                                        }
+
+                                                                                                            .card button {
+                                                                                                                    font-size: 12px;
+                                                                                                                            padding: 8px 10px;
+                                                                                                                                }
+                                                                                                                                }
+
+                                                                                                                                /* Shopping Cart */
+                                                                                                                                .cart-panel {
+                                                                                                                                    position: fixed;
+                                                                                                                                        top: 90px;
+                                                                                                                                            right: 15px;
+                                                                                                                                                width: 280px;
+                                                                                                                                                    max-width: calc(100% - 30px);
+                                                                                                                                                        background: #111;
+                                                                                                                                                            color: white;
+                                                                                                                                                                border: 2px solid gold;
+                                                                                                                                                                    border-radius: 10px;
+                                                                                                                                                                        padding: 18px;
+                                                                                                                                                                            z-index: 1000;
+                                                                                                                                                                                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+                                                                                                                                                                                }
+
+                                                                                                                                                                                .cart-panel h2 {
+                                                                                                                                                                                    color: gold;
+                                                                                                                                                                                        margin-top: 0;
+                                                                                                                                                                                            text-align: center;
+                                                                                                                                                                                            }
+
+                                                                                                                                                                                            #cart-items {
+                                                                                                                                                                                                margin: 15px 0;
+                                                                                                                                                                                                }
+
+                                                                                                                                                                                                #cart-items p {
+                                                                                                                                                                                                    border-bottom: 1px solid #555;
+                                                                                                                                                                                                        padding: 8px 0;
+                                                                                                                                                                                                            margin: 0;
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                            #cart-total {
+                                                                                                                                                                                                                color: gold;
+                                                                                                                                                                                                                    font-weight: bold;
+                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                    #close-cart {
+                                                                                                                                                                                                                        width: 100%;
+                                                                                                                                                                                                                            padding: 10px;
+                                                                                                                                                                                                                                margin-top: 12px;
+                                                                                                                                                                                                                                    background: gold;
+                                                                                                                                                                                                                                        color: black;
+                                                                                                                                                                                                                                            border: none;
+                                                                                                                                                                                                                                                border-radius: 6px;
+                                                                                                                                                                                                                                                    cursor: pointer;
+                                                                                                                                                                                                                                                        font-weight: bold;
+                                                                                                                                                                                                                                                        }
