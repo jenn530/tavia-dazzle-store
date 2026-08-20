@@ -2,7 +2,7 @@ import './style.css'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <header class="navbar">
-  <img src="/IMG-20260731-WA0000.jpg" alt="Logo" class="logo">
+        <img src="IMG-20260731-WA0000.jpg" alt="Logo" class="logo">
 
     <nav>
         <a href="#">Home</a>
@@ -28,34 +28,34 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                                 <div class="product-grid">
 
                                                 <div class="card">
-                                                <img src="/products/IMG-20260731-WA0020.jpg" alt="Female Rolex Wrist Set">
+                                                <img src="products/IMG-20260731-WA0020.jpg" alt="Female Rolex Wrist Set">
                                                 <h3>Female Rolex Wrist Set</h3>
                                                 <p>₦26,000</p>
                                                 <button>Add to Cart</button>
                                                 </div>
 
                                                 <div class="card">
-                                                <img src="/products/IMG-20260731-WA0027.jpg" alt="Male POEDAGAR Watch">
+                                                <img src="products/IMG-20260731-WA0027.jpg" alt="Male POEDAGAR Watch">
                                                 <h3>Male POEDAGAR Watch</h3>
                                                 <p>₦30,000</p>
                                                 <button>Add to Cart</button>
                                                 </div>
 
                                                 <div class="card">
-                                                <img src="/products/IMG-20260731-WA0018.jpg" alt="Stud Unisex Gold Earring">
+                                                <img src="products/IMG-20260731-WA0018.jpg" alt="Stud Unisex Gold Earring">
                                                 <h3>Stud Unisex Gold Earring</h3>
                                                 <p>₦5,500</p>
                                                 <button>Add to Cart</button>
                                                 </div>
                                                 <div class="card">
-                                                <img src="/products/IMG-20260731-WA0021.jpg" alt="Unisex Gold Earrings">
+                                                <img src="products/IMG-20260731-WA0021.jpg" alt="Unisex Gold Earrings">
                                                 <h3>Unisex Gold Earrings</h3>
                                                 <p>₦4,500</p>
                                                 <button>Add to Cart</button>
                                                 </div>
 
                                                 <div class="card">
-                                                <img src="/products/IMG-20260731-WA0016.jpg" alt="Rose Female Jewelry Set">
+                                                <img src="products/IMG-20260731-WA0016.jpg" alt="Rose Female Jewelry Set">
                                                 <h3>Rose Female Jewelry Set</h3>
                                                 <p>₦25,000</p>
                                                 <button>Add to Cart</button>
